@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="de">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Datenschutzerklärung — ViraKin</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <p class="nav">
+    <a href="./privacy.html" aria-current="page">Datenschutz</a>
+    <a href="./terms.html">Nutzungsbedingungen</a>
+    <a href="./delete-account.html">Daten löschen</a>
+    <a href="./imprint.html">Impressum</a>
+    <a class="lang" href="./en/privacy.html">English</a>
+  </p>
+
+  <h1>Datenschutzerklärung</h1>
+  <p class="meta">ViraKin · Stand: 3. August 2026</p>
+
+  <div class="note">
+    <strong>Kurz gesagt</strong>
+    <ul>
+      <li>Kein Konto, keine E-Mail-Adresse, kein Passwort. Nur eine zufällige, anonyme ID für dein Gerät.</li>
+      <li>Dein Video wird für genau einen Zweck verarbeitet: die Analyse. Danach wird es sofort gelöscht — bei
+        uns und bei Google.</li>
+      <li>Was bleibt, ist das Ergebnis: Score, Auswertung und ein kleines Vorschaubild.</li>
+      <li>Kein Werbe-Tracking, keine Analytics-SDKs, kein Verkauf von Daten.</li>
+      <li>Löschen geht per E-Mail. Wie genau, steht auf der Seite <a href="./delete-account.html">Daten
+          löschen</a>.</li>
+    </ul>
+  </div>
+
+  <h2>1. Verantwortlicher</h2>
+  <address>
+    Henri Irmscher — Appentwicklung<br />
+    Seckbacher Landstr. 66<br />
+    60389 Frankfurt am Main<br />
+    Deutschland
+  </address>
+  <p>E-Mail: <a href="mailto:henri.irmscher@gmail.com">henri.irmscher@gmail.com</a></p>
+  <p>Ein Datenschutzbeauftragter ist gesetzlich nicht erforderlich und wurde nicht bestellt.</p>
+
+  <h2>2. Eine anonyme ID statt eines Nutzerkontos</h2>
+  <p>
+    ViraKin hat keine Registrierung. Beim ersten Start meldet sich die App anonym bei unserem Backend an
+    (Supabase, <em>anonymous sign-in</em>). Dabei entsteht eine zufällige ID, die auf deinem Gerät gespeichert
+    wird. Diese ID hat genau eine Aufgabe: deine Analysen deinem Gerät zuzuordnen, damit niemand sonst sie sehen
+    kann.
+  </p>
+  <p>
+    Wir erfahren nie deinen Namen, deine E-Mail-Adresse oder deine Telefonnummer. Die ID ist mit keinem anderen
+    Dienst verknüpft. Es gibt keinen Login und keine Passwort-Wiederherstellung.
+  </p>
+  <p>
+    <strong>Wichtig:</strong> Weil es kein Konto gibt, hängt alles an dieser ID. Wenn du die App löschst, dich in
+    der App abmeldest oder ein neues Gerät nimmst, ist die alte ID weg — und mit ihr der Zugang zu deinem
+    Verlauf. Die Daten selbst liegen dann noch bei uns, aber niemand kann sie mehr abrufen. Wenn du sie auch
+    dort gelöscht haben willst, schreib uns vorher (siehe <a href="./delete-account.html">Daten löschen</a>).
+  </p>
+
+  <h2>3. Welche Daten wir verarbeiten</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Daten</th>
+        <th>Zweck</th>
+        <th>Rechtsgrundlage</th>
+        <th>Speicherdauer</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Anonyme Geräte-ID</td>
+        <td>Ordnet Analysen deinem Gerät zu und sperrt den Zugriff für andere</td>
+        <td>Art. 6 Abs. 1 lit. b DSGVO (Vertragserfüllung)</td>
+        <td>Bis zur Löschung auf deine Anfrage hin</td>
+      </tr>
+      <tr>
+        <td>Das Video, das du analysieren lässt</td>
+        <td>Grundlage der Analyse</td>
+        <td>Art. 6 Abs. 1 lit. b DSGVO</td>
+        <td>Wird direkt nach der Analyse aus unserem Speicher und bei Google gelöscht. Bricht eine Analyse ab,
+          räumt die App die hochgeladene Datei selbst wieder weg</td>
+      </tr>
+      <tr>
+        <td>Vorschaubild (ein Einzelbild aus deinem Video)</td>
+        <td>Damit die Analyse im Verlauf erkennbar bleibt, nachdem das Video gelöscht wurde</td>
+        <td>Art. 6 Abs. 1 lit. b DSGVO</td>
+        <td>Bis zur Löschung</td>
+      </tr>
+      <tr>
+        <td>Hook- und Skript-Texte, die du eingibst</td>
+        <td>Grundlage der Analyse</td>
+        <td>Art. 6 Abs. 1 lit. b DSGVO</td>
+        <td>Bis zur Löschung</td>
+      </tr>
+      <tr>
+        <td>Analyse-Ergebnis (Score, Auswertung nach Kategorien, Text der KI)</td>
+        <td>Zeigt dir das Ergebnis und deinen Verlauf</td>
+        <td>Art. 6 Abs. 1 lit. b DSGVO</td>
+        <td>Bis zur Löschung. Blendest du einen Eintrag in der App aus, bleibt die Zeile als Zähler für dein
+          Kontingent bestehen — siehe unten</td>
+      </tr>
+      <tr>
+        <td>Freiwillige Profilangaben (Anzeigename, Bio, TikTok-Handle)</td>
+        <td>Zeigt dein Profil in der App. Rein kosmetisch, wir prüfen nichts davon nach</td>
+        <td>Art. 6 Abs. 1 lit. b DSGVO</td>
+        <td>Bis zur Löschung oder bis du das Feld leerst</td>
+      </tr>
+      <tr>
+        <td>Nutzungszähler (Anzahl deiner Analysen pro Tag und Monat)</td>
+        <td>Rechnet dein Kontingent ab und verhindert Missbrauch unserer KI-Kosten</td>
+        <td>Art. 6 Abs. 1 lit. b und lit. f DSGVO</td>
+        <td>Bis zur Löschung</td>
+      </tr>
+      <tr>
+        <td>Abo-Status und Kaufdaten (Produkt, Store, Laufzeit, RevenueCat-ID)</td>
+        <td>Schaltet die bezahlten Funktionen frei</td>
+        <td>Art. 6 Abs. 1 lit. b DSGVO</td>
+        <td>Bis zur Löschung. Meldungen des Abo-Dienstes werden nach 90 Tagen entfernt</td>
+      </tr>
+      <tr>
+        <td>Technische Server-Logs (IP-Adresse, Zeitstempel, Fehlercode)</td>
+        <td>Betrieb, Fehlersuche, Missbrauchsabwehr</td>
+        <td>Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse)</td>
+        <td>Kurzfristig, dann automatische Löschung durch den Betreiber</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p>
+    Daraus entsteht kein Profil. Es gibt keinen Vergleich zwischen Nutzern und keine Auswertung über deine eigene
+    Nutzung hinaus.
+  </p>
+
+  <h3>Ausblenden ist nicht Löschen</h3>
+  <p>
+    Wenn du eine Analyse im Verlauf wegwischst, verschwindet sie aus der App, die Zeile bleibt aber auf dem
+    Server. Grund: Dein Monatskontingent wird über die Anzahl deiner Analysen gezählt. Würde das Wegwischen die
+    Zeile löschen, wäre das Kontingent unbegrenzt. Die App weist beim Bestätigen darauf hin. Endgültig gelöscht
+    wird auf Anfrage — wie das geht, steht auf der Seite
+    <a href="./delete-account.html">Daten löschen</a>.
+  </p>
+
+  <h2>4. Wohin dein Video tatsächlich geht</h2>
+  <p>Damit du den Weg deines Materials nachvollziehen kannst:</p>
+  <ol>
+    <li>Du teilst ein Video aus TikTok an ViraKin oder wählst es auf deinem Gerät aus.</li>
+    <li>Die App verkleinert es <strong>auf deinem Gerät</strong> und lädt es in unseren privaten Speicher
+      (Supabase, Region Irland). Der Ordner gehört allein deiner ID.</li>
+    <li>Unsere Serverfunktion holt die Datei dort ab und lädt sie zur Analyse an die Gemini-Schnittstelle von
+      Google hoch.</li>
+    <li>Google analysiert das Video und gibt ein Ergebnis in Textform zurück.</li>
+    <li><strong>Danach wird das Video sofort gelöscht</strong> — bei Google und in unserem Speicher.</li>
+    <li>Es bleibt: der Score, die Auswertung, der Text der KI und ein Vorschaubild.</li>
+  </ol>
+  <p>
+    Videos dürfen höchstens 90 Sekunden lang und 50 MB groß sein. Wenn eine Analyse abbricht, bevor der Server
+    sie überhaupt erreicht, räumt die App die hochgeladene Datei selbst wieder weg.
+  </p>
+
+  <h2>5. Analyse durch Google Gemini</h2>
+  <p>
+    Die eigentliche Bewertung macht ein KI-Modell von Google (Gemini API). Dorthin geht:
+  </p>
+  <ul>
+    <li>bei einer Video-Analyse: das Video selbst,</li>
+    <li>bei einer Hook- oder Skript-Analyse: der Text, den du eingegeben hast,</li>
+    <li>dazu unsere Anweisung, wie bewertet werden soll.</li>
+  </ul>
+  <p>
+    Es geht <strong>keine</strong> ID, kein Name und kein anderes Merkmal von dir mit. Google bekommt nur den
+    Inhalt und weiß nicht, von wem er stammt.
+  </p>
+  <p>
+    Google betreibt diese Schnittstelle auf eigener Infrastruktur, auch außerhalb der EU. Eine hochgeladene
+    Videodatei wird von uns direkt nach der Analyse bei Google wieder gelöscht. Für die kostenpflichtige Nutzung
+    der Gemini API sagt Google zu, die übermittelten Inhalte nicht zum Training seiner Modelle zu verwenden.
+    ViraKin nutzt die Schnittstelle kostenpflichtig.
+  </p>
+  <p>
+    Bitte lade nichts hoch und gib nichts ein, was du einem externen KI-Dienst nicht zeigen würdest. Details
+    dazu, was Google mit den Daten macht, stehen in Googles eigenen Bedingungen zur Gemini API.
+  </p>
+
+  <h2>6. Zugriff auf deine Videos und Fotos</h2>
+  <p>
+    Um ein Video auszuwählen, öffnet ViraKin die Dateiauswahl deines Betriebssystems. Die App bekommt keinen
+    Zugriff auf deine ganze Galerie, sondern nur auf die Datei, die du selbst antippst. Wir durchsuchen deine
+    Galerie nicht und laden nichts hoch, was du nicht ausgewählt hast.
+  </p>
+  <p>
+    Wenn du ein Video direkt aus TikTok teilst, reicht dein Betriebssystem genau diese eine Datei an ViraKin
+    weiter. Wir haben keinen Zugang zu deinem TikTok-Konto, keine Verbindung zu TikTok und sehen weder deine
+    Follower noch deine Statistiken.
+  </p>
+
+  <h2>7. Kein Tracking, keine Werbung</h2>
+  <p>
+    ViraKin enthält keine Analyse-, Werbe- oder Attributions-SDKs. Es gibt kein Profiling, keine automatisierte
+    Entscheidung im Sinne von Art. 22 DSGVO und keine Weitergabe an Werbenetzwerke. Wir verkaufen keine Daten.
+    Das einzige eingebundene SDK eines Dritten ist der unten genannte Abo-Dienst.
+  </p>
+  <p>
+    Eine technische Ausnahme: Die App lädt beim ersten Start ihre Schriftart über den Dienst Google Fonts. Dabei
+    sieht Google deine IP-Adresse. Danach liegt die Schrift auf deinem Gerät und wird nicht erneut geladen.
+  </p>
+
+  <h2>8. Empfänger und Auftragsverarbeiter</h2>
+  <p>Wir setzen die folgenden Dienstleister ein, die Daten in unserem Auftrag verarbeiten:</p>
+  <table>
+    <thead>
+      <tr>
+        <th>Dienst</th>
+        <th>Rolle</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Supabase</td>
+        <td>Anonyme Anmeldung, Datenbank, privater Speicher und die Serverfunktion, die die Analyse auslöst.
+          Datenbank und Speicher liegen in der Region Irland (EU).</td>
+      </tr>
+      <tr>
+        <td>Google (Gemini API)</td>
+        <td>Führt die eigentliche Analyse durch. Erhält dein Video oder deinen Text, aber keine ID und keine
+          Angaben zu deiner Person.</td>
+      </tr>
+      <tr>
+        <td>Google Fonts</td>
+        <td>Liefert die Schriftart der App beim ersten Start. Erhält dabei deine IP-Adresse.</td>
+      </tr>
+      <tr>
+        <td>RevenueCat</td>
+        <td>Verwaltet dein Abo. Verarbeitet deine anonyme ID, den Kaufbeleg deines App-Stores, Produkt und
+          Laufzeit sowie technische Angaben zu deinem Gerät. RevenueCat sieht nie deine Videos oder Texte.</td>
+      </tr>
+      <tr>
+        <td>Apple App Store / Google Play</td>
+        <td>Vertrieb der App und Zahlungsabwicklung. Diese Plattformen erheben eigene Daten nach ihren eigenen
+          Datenschutzerklärungen. Wir bekommen von ihnen keine Zahlungsdaten, nur die Bestätigung, dass ein Abo
+          besteht.</td>
+      </tr>
+      <tr>
+        <td>GitHub (GitHub Pages)</td>
+        <td>Stellt diese Rechtstexte bereit. Dadurch erscheint deine IP-Adresse in den Zugriffs-Logs.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>Übermittlung in die USA</h3>
+  <p>
+    Supabase, Google, RevenueCat, Apple und GitHub sind US-Unternehmen. Auch wenn unsere Datenbank und der
+    Speicher technisch in Irland liegen, ist ein Zugriff aus den USA nicht auszuschließen. Bei der
+    Gemini-Analyse findet die Verarbeitung ohnehin auf Googles weltweiter Infrastruktur statt. Rechtsgrundlage
+    dafür sind die Standardvertragsklauseln der EU-Kommission nach Art. 46 Abs. 2 lit. c DSGVO, soweit sich der
+    jeweilige Anbieter nicht auf einen Angemessenheitsbeschluss nach Art. 45 DSGVO stützt (EU-US Data Privacy
+    Framework). Eine Kopie der Klauseln kannst du unter
+    <a href="mailto:henri.irmscher@gmail.com">henri.irmscher@gmail.com</a> anfordern.
+  </p>
+
+  <h2>9. Sicherheit</h2>
+  <ul>
+    <li>Alle Verbindungen zwischen App und Server sind mit TLS verschlüsselt.</li>
+    <li>Der Speicher ist privat. Zugriff gibt es nur über kurzlebige, signierte Links.</li>
+    <li>Die Datenbank trennt die Nutzer selbst: Jede Abfrage sieht ausschließlich Zeilen, die zur eigenen ID
+      gehören (Row Level Security).</li>
+    <li>Der Server prüft bei jedem Zugriff aus dem geprüften Anmelde-Token, wem die Daten wirklich gehören —
+      nie aus einem Wert, den das Gerät mitschickt.</li>
+    <li>Der Schlüssel für die KI-Schnittstelle liegt nur auf dem Server, nie in der App.</li>
+  </ul>
+
+  <h2>10. Deine Rechte</h2>
+  <p>Nach der DSGVO hast du das Recht auf:</p>
+  <ul>
+    <li>Auskunft über deine Daten (Art. 15)</li>
+    <li>Berichtigung (Art. 16)</li>
+    <li>Löschung (Art. 17)</li>
+    <li>Einschränkung der Verarbeitung (Art. 18)</li>
+    <li>Datenübertragbarkeit (Art. 20)</li>
+    <li>Widerspruch gegen Verarbeitungen auf Grundlage berechtigter Interessen (Art. 21)</li>
+  </ul>
+  <p>
+    Diese Rechte übst du per E-Mail an <a href="mailto:henri.irmscher@gmail.com">henri.irmscher@gmail.com</a>
+    aus. Wir antworten innerhalb eines Monats.
+  </p>
+  <p>
+    Wichtig: Weil ViraKin nicht weiß, wer du bist, können wir eine Anfrage per E-Mail nur bearbeiten, wenn du
+    deine anonyme ID mitschickst. Wo du sie findest, steht auf der Seite
+    <a href="./delete-account.html">Daten löschen</a>. Ohne diese ID können wir deine Daten nicht zuordnen und
+    aus Sicherheitsgründen auch nichts herausgeben (Art. 11 Abs. 2 DSGVO).
+  </p>
+  <p>
+    Du kannst dich außerdem bei einer Aufsichtsbehörde beschweren. Für uns zuständig ist der Hessische
+    Beauftragte für Datenschutz und Informationsfreiheit, Postfach 3163, 65021 Wiesbaden.
+  </p>
+
+  <h2>11. Kinder</h2>
+  <p>
+    ViraKin richtet sich nicht an Kinder unter 16 Jahren. Wir erheben wissentlich keine Daten von Kindern unter
+    16 Jahren.
+  </p>
+
+  <h2>12. Änderungen</h2>
+  <p>
+    Wenn sich die App ändert, aktualisieren wir diese Erklärung. Das Datum oben zeigt die aktuelle Fassung. Auf
+    wesentliche Änderungen weisen wir in der App hin.
+  </p>
+
+  <footer>
+    <p>
+      <a href="./privacy.html">Datenschutz</a> ·
+      <a href="./terms.html">Nutzungsbedingungen</a> ·
+      <a href="./delete-account.html">Daten löschen</a> ·
+      <a href="./imprint.html">Impressum</a> ·
+      <a href="./en/privacy.html">English</a>
+    </p>
+  </footer>
+</body>
+
+</html>
