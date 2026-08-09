@@ -1,6 +1,6 @@
-# ViraKin — Rechtstexte
+# Mr. Viral — Rechtstexte
 
-Statische Rechtsseiten für die ViraKin-App. Kein Build, kein Framework, nur HTML
+Statische Rechtsseiten für die Mr. Viral-App. Kein Build, kein Framework, nur HTML
 und eine CSS-Datei.
 
 Live: <https://henri069.github.io/mrviral_legal/>
