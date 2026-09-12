@@ -1,19 +1,26 @@
 # Mr. Viral — Rechtstexte
 
-Statische Rechtsseiten für die Mr. Viral-App. Kein Build, kein Framework, nur HTML
-und eine CSS-Datei.
+Die Website zur Mr. Viral-App: Startseite plus Rechtstexte. Kein Build, kein
+Framework, nur HTML und CSS. Keine externen Schriften, keine Skripte, kein
+Tracking — damit die Datenschutzerklärung ohne Zusatz stimmt.
 
-Live: <https://henri069.github.io/mrviral_legal/>
+Live: <https://mr-viral.de/> (GitHub Pages mit eigener Domain, siehe `CNAME`).
+Die alte Adresse <https://henri069.github.io/mrviral_legal/> leitet dorthin weiter.
 
 ## Aufbau
 
 ```
-index.html            Übersicht (Deutsch)
+index.html            Startseite (Deutsch)
 privacy.html          Datenschutzerklärung
 terms.html            Nutzungsbedingungen
 delete-account.html   Konto und Daten löschen
 imprint.html          Impressum
 style.css             gemeinsames Styling für alle Seiten
+home.css              nur für die Startseite
+icon.png              App-Icon im Hero und als Share-Bild
+favicon.png           Browser-Tab-Icon
+CNAME                 eigene Domain für GitHub Pages
+app-ads.txt           AdMob-Verifizierung
 en/                   dieselben fünf Seiten auf Englisch
 ```
 

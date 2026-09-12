@@ -1,0 +1,202 @@
+/* Nur für die Startseite. Liegt über style.css und hebt die schmale
+   Textspalte auf, die für die Rechtstexte gedacht ist. Keine externen
+   Schriften, keine Skripte, kein Tracking — die Datenschutzerklärung
+   soll ohne Zusatz stimmen. */
+
+body.home {
+  max-width: none;
+  padding: 0 0 0;
+}
+
+.wrap {
+  max-width: 58rem;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ---------- Hero ---------- */
+
+.hero {
+  background: linear-gradient(150deg, #8a7ad4 0%, #5b4bc4 45%, #2c2a5e 100%);
+  color: #ffffff;
+  padding: 64px 20px 72px;
+  text-align: center;
+}
+
+.hero-icon {
+  width: 88px;
+  height: 88px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(20, 19, 31, 0.35);
+  margin: 0 auto 22px;
+  display: block;
+}
+
+.hero h1 {
+  font-size: 2.4rem;
+  margin: 0 0 0.15em;
+  color: #ffffff;
+}
+
+.hero .tagline {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0 0 0.8em;
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.hero p.lede {
+  max-width: 34rem;
+  margin: 0 auto 1.8em;
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.hero .langswitch {
+  margin-top: 26px;
+  font-size: 0.9rem;
+}
+
+.hero .langswitch a {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+/* ---------- Store-Buttons ---------- */
+
+.stores {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+}
+
+.store-btn {
+  display: inline-block;
+  padding: 13px 26px;
+  border-radius: 999px;
+  background: #ffffff;
+  color: #2c2a5e;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 0.98rem;
+}
+
+.store-btn.alt {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  color: #ffffff;
+}
+
+/* ---------- Abschnitte ---------- */
+
+.section {
+  padding: 56px 0 8px;
+}
+
+.section h2 {
+  border: 0;
+  font-size: 1.5rem;
+  margin: 0 0 0.2em;
+  padding: 0;
+  letter-spacing: -0.01em;
+}
+
+.section > p.intro {
+  color: var(--muted);
+  margin: 0 0 1.8em;
+  max-width: 38rem;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 16px;
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 20px 22px;
+}
+
+.card h3 {
+  margin: 0 0 0.4em;
+  font-size: 1.05rem;
+}
+
+.card p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+/* ---------- Plan-Vergleich ---------- */
+
+.plans {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  gap: 16px;
+}
+
+.plan {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 22px 24px;
+}
+
+.plan.pro {
+  border-color: var(--accent);
+}
+
+.plan h3 {
+  margin: 0 0 0.6em;
+  font-size: 1.05rem;
+}
+
+.plan ul {
+  margin: 0;
+  padding-left: 1.1em;
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+
+.footnote {
+  color: var(--muted);
+  font-size: 0.85rem;
+  margin-top: 1.2em;
+}
+
+/* ---------- Footer ---------- */
+
+body.home footer {
+  margin-top: 56px;
+  padding: 26px 20px 44px;
+  border-top: 1px solid var(--border);
+}
+
+body.home footer .wrap {
+  padding: 0 20px;
+}
+
+body.home footer p {
+  margin: 0.4em 0;
+}
+
+body.home footer a {
+  text-decoration: none;
+}
+
+@media (max-width: 34rem) {
+  .hero {
+    padding: 48px 20px 56px;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero .tagline {
+    font-size: 1.05rem;
+  }
+}
