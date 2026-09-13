@@ -20,7 +20,7 @@
   </p>
 
   <h1>Datenschutzerklärung</h1>
-  <p class="meta">Mr. Viral · Stand: 12. September 2026</p>
+  <p class="meta">Mr. Viral · Stand: 13. September 2026</p>
 
   <div class="note">
     <strong>Kurz gesagt</strong>
@@ -29,7 +29,8 @@
       <li>Dein Video wird für genau einen Zweck verarbeitet: die Analyse. Danach wird es sofort gelöscht — bei
         uns und bei Google.</li>
       <li>Was bleibt, ist das Ergebnis: Score, Auswertung und ein kleines Vorschaubild.</li>
-      <li>Kein Werbe-Tracking, keine Analytics-SDKs, kein Verkauf von Daten.</li>
+      <li>Werbung nur in der kostenlosen Variante und nur nach deiner Einwilligung; eine anonyme
+        Nutzungsstatistik, die du in der App jederzeit abschalten kannst. Kein Verkauf von Daten.</li>
       <li>Löschen geht per E-Mail. Wie genau, steht auf der Seite <a href="./delete-account.html">Daten
           löschen</a>.</li>
     </ul>
@@ -126,6 +127,31 @@
         <td>Bis zur Löschung. Meldungen des Abo-Dienstes werden nach 90 Tagen entfernt</td>
       </tr>
       <tr>
+        <td>Nutzungsstatistik (anonyme ID, Gerätemodell, Betriebssystem, App-Version, Sprache, aufgerufene
+          Screens, ausgelöste Aktionen wie „Analyse gestartet“ oder „Paywall geöffnet“, Score-Bereich, Fehler-
+          und Absturzberichte)</td>
+        <td>Verstehen, welche Funktionen genutzt werden und wo die App hängt oder abstürzt; Vergleich von
+          Gestaltungsvarianten (A/B-Tests). Nie der Inhalt deiner Videos, Hooks oder Skripte, keine Dateinamen</td>
+        <td>Art. 6 Abs. 1 lit. a DSGVO, § 25 Abs. 1 TTDSG — Einwilligung über das Einwilligungsformular,
+          jederzeit im Profil abschaltbar</td>
+        <td>12 Monate, danach automatische Löschung. Die IP-Adresse wird beim Empfang verworfen</td>
+      </tr>
+      <tr>
+        <td>Werbe-Daten (Werbe-ID des Geräts, IP-Adresse, ungefährer Standort, Angaben zur Ausspielung)</td>
+        <td>Ausspielung der kurzen Werbevideos, mit denen du in der kostenlosen Variante eine Analyse
+          freischaltest. Personalisiert nur mit deiner Einwilligung, sonst nicht-personalisiert</td>
+        <td>Art. 6 Abs. 1 lit. a DSGVO (Einwilligung über das Einwilligungsformular); nicht-personalisierte
+          Werbung auf Basis von Art. 6 Abs. 1 lit. f DSGVO</td>
+        <td>Bei Google nach dessen Datenschutzerklärung; wir speichern davon nichts</td>
+      </tr>
+      <tr>
+        <td>Werbe-Gutschrift (anonyme ID, Kennung des angesehenen Werbevideos)</td>
+        <td>Google bestätigt unserem Server, dass ein Werbevideo vollständig angesehen wurde; daraus entsteht
+          deine Gutschrift für eine Analyse</td>
+        <td>Art. 6 Abs. 1 lit. b DSGVO</td>
+        <td>Bis zur Löschung</td>
+      </tr>
+      <tr>
         <td>Technische Server-Logs (IP-Adresse, Zeitstempel, Fehlercode)</td>
         <td>Betrieb, Fehlersuche, Missbrauchsabwehr</td>
         <td>Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse)</td>
@@ -135,8 +161,8 @@
   </table>
 
   <p>
-    Daraus entsteht kein Profil. Es gibt keinen Vergleich zwischen Nutzern und keine Auswertung über deine eigene
-    Nutzung hinaus.
+    Daraus entsteht kein Profil über dich. Die Nutzungsstatistik werten wir nur in Summe aus — welche Variante
+    besser funktioniert, wie viele Analysen gestartet werden —, nie um dich als Person zu bewerten.
   </p>
 
   <h3>Ausblenden ist nicht Löschen</h3>
@@ -201,15 +227,37 @@
     Follower noch deine Statistiken.
   </p>
 
-  <h2>7. Kein Tracking, keine Werbung</h2>
+  <h2>7. Werbung, Einwilligung und Nutzungsstatistik</h2>
+  <h3>Werbung in der kostenlosen Variante</h3>
   <p>
-    Mr. Viral enthält keine Analyse-, Werbe- oder Attributions-SDKs. Es gibt kein Profiling, keine automatisierte
-    Entscheidung im Sinne von Art. 22 DSGVO und keine Weitergabe an Werbenetzwerke. Wir verkaufen keine Daten.
-    Das einzige eingebundene SDK eines Dritten ist der unten genannte Abo-Dienst.
+    Ohne Abo schaltest du eine Analyse frei, indem du ein kurzes Werbevideo ansiehst. Die Werbung stellt Google
+    AdMob bereit. Bevor die erste Werbung geladen wird, zeigt die App in der EU, im EWR und im Vereinigten
+    Königreich Googles Einwilligungsformular (User Messaging Platform nach dem TCF-Standard des IAB). Dort
+    entscheidest du, ob Werbung personalisiert sein darf und ob Informationen auf deinem Gerät gespeichert werden
+    dürfen. Lehnst du ab, bekommst du nicht-personalisierte Werbung — die App funktioniert genauso. Auf iOS folgt
+    danach die Systemabfrage zur App-Tracking-Transparenz; hast du im Formular abgelehnt, wird sie gar nicht
+    gestellt. Deine Auswahl änderst du jederzeit unter Profil → Werbe-Einstellungen. Mit Mr. Viral Pro gibt es
+    keine Werbung.
+  </p>
+  <h3>Anonyme Nutzungsstatistik</h3>
+  <p>
+    Um zu sehen, welche Funktionen genutzt werden und wo die App hängt oder abstürzt, setzen wir PostHog ein
+    (PostHog Inc., Betrieb auf Servern in Frankfurt, EU). Übertragen werden deine anonyme ID, Gerätemodell,
+    Betriebssystem, App-Version, Sprache, welche Screens du aufrufst und welche Aktionen du auslöst — etwa
+    „Analyse gestartet“, der Score-Bereich eines Ergebnisses oder ob die Paywall geöffnet wurde — sowie Fehler-
+    und Absturzberichte. Nie übertragen werden der Inhalt deiner Videos, Hooks oder Skripte und keine Dateinamen.
+    Die IP-Adresse wird beim Empfang verworfen. Mit denselben Daten vergleichen wir Gestaltungsvarianten der App
+    (A/B-Tests); deine anonyme ID wird dafür einer Variante zugeordnet.
   </p>
   <p>
-    Eine technische Ausnahme: Die App lädt beim ersten Start ihre Schriftart über den Dienst Google Fonts. Dabei
-    sieht Google deine IP-Adresse. Danach liegt die Schrift auf deinem Gerät und wird nicht erneut geladen.
+    Die Statistik läuft nur, wenn du im Einwilligungsformular der Speicherung von Informationen auf deinem Gerät
+    zugestimmt hast (Rechtsgrundlage Art. 6 Abs. 1 lit. a DSGVO, § 25 Abs. 1 TTDSG); außerhalb des
+    Geltungsbereichs der DSGVO, wo kein Formular erscheint, läuft sie ohne Formular. Abschalten kannst du sie
+    jederzeit unter Profil → Rechtliches → „Anonyme Nutzungsstatistik“. Speicherdauer: 12 Monate. Es gibt kein
+    Profiling, keine automatisierte Entscheidung im Sinne von Art. 22 DSGVO und keinen Verkauf von Daten.
+  </p>
+  <p>
+    Die Schriftart der App ist in der App enthalten und wird nicht über das Internet nachgeladen.
   </p>
 
   <h2>8. Empfänger und Auftragsverarbeiter</h2>
@@ -233,13 +281,20 @@
           Angaben zu deiner Person.</td>
       </tr>
       <tr>
-        <td>Google Fonts</td>
-        <td>Liefert die Schriftart der App beim ersten Start. Erhält dabei deine IP-Adresse.</td>
-      </tr>
-      <tr>
         <td>RevenueCat</td>
         <td>Verwaltet dein Abo. Verarbeitet deine anonyme ID, den Kaufbeleg deines App-Stores, Produkt und
           Laufzeit sowie technische Angaben zu deinem Gerät. RevenueCat sieht nie deine Videos oder Texte.</td>
+      </tr>
+      <tr>
+        <td>Google (AdMob, User Messaging Platform)</td>
+        <td>Spielt die Werbevideos der kostenlosen Variante aus und stellt das Einwilligungsformular bereit.
+          Verarbeitet Werbe-ID, IP-Adresse und Angaben zur Ausspielung; bestätigt unserem Server das vollständige
+          Ansehen eines Werbevideos unter deiner anonymen ID.</td>
+      </tr>
+      <tr>
+        <td>PostHog</td>
+        <td>Anonyme Nutzungsstatistik und Fehlerberichte (siehe Abschnitt 7), Server in Frankfurt (EU). Erhält
+          deine anonyme ID und technische Angaben, nie Videos oder Texte.</td>
       </tr>
       <tr>
         <td>Apple App Store / Google Play</td>
@@ -257,7 +312,8 @@
 
   <h3>Übermittlung in die USA</h3>
   <p>
-    Supabase, Google, RevenueCat, Apple und GitHub sind US-Unternehmen. Auch wenn unsere Datenbank und der
+    Supabase, Google, RevenueCat, PostHog, Apple und GitHub sind US-Unternehmen; PostHog verarbeitet unsere
+    Daten auf Servern in Frankfurt. Auch wenn unsere Datenbank und der
     Speicher technisch in Irland liegen, ist ein Zugriff aus den USA nicht auszuschließen. Bei der
     Gemini-Analyse findet die Verarbeitung ohnehin auf Googles weltweiter Infrastruktur statt. Rechtsgrundlage
     dafür sind die Standardvertragsklauseln der EU-Kommission nach Art. 46 Abs. 2 lit. c DSGVO, soweit sich der

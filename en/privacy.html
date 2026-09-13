@@ -20,7 +20,7 @@
   </p>
 
   <h1>Privacy Policy</h1>
-  <p class="meta">Mr. Viral · Last updated: 12 September 2026</p>
+  <p class="meta">Mr. Viral · Last updated: 13 September 2026</p>
 
   <div class="note">
     <strong>In short</strong>
@@ -29,7 +29,8 @@
       <li>Your video is processed for exactly one purpose: the analysis. Right afterwards it is deleted — both
         by us and at Google.</li>
       <li>What stays behind is the result: the score, the breakdown and a small preview image.</li>
-      <li>No ad tracking, no analytics SDKs, no selling of data.</li>
+      <li>Ads only in the free version and only after your consent; anonymous usage statistics you can
+        switch off in the app at any time. No selling of data.</li>
       <li>Deletion works by email. The <a href="./delete-account.html">Delete data</a> page explains how.</li>
     </ul>
   </div>
@@ -124,6 +125,31 @@
         <td>Until erasure. Messages from the subscription service are removed after 90 days</td>
       </tr>
       <tr>
+        <td>Usage statistics (anonymous ID, device model, operating system, app version, language, screens
+          opened, actions taken such as “analysis started” or “paywall opened”, score band, error and crash
+          reports)</td>
+        <td>Understanding which features are used and where the app stalls or crashes; comparing design variants
+          (A/B tests). Never the content of your videos, hooks or scripts, no file names</td>
+        <td>Art. 6(1)(a) GDPR, § 25(1) TTDSG — consent via the consent form, can be switched off in the profile
+          at any time</td>
+        <td>12 months, then deleted automatically. The IP address is discarded on receipt</td>
+      </tr>
+      <tr>
+        <td>Advertising data (the device's advertising ID, IP address, approximate location, delivery details)</td>
+        <td>Serving the short ad videos that unlock an analysis in the free version. Personalised only with your
+          consent, otherwise non-personalised</td>
+        <td>Art. 6(1)(a) GDPR (consent via the consent form); non-personalised ads on the basis of
+          Art. 6(1)(f) GDPR</td>
+        <td>By Google under its own privacy policy; we store none of it</td>
+      </tr>
+      <tr>
+        <td>Ad credit (anonymous ID, identifier of the ad watched)</td>
+        <td>Google confirms to our server that an ad video was watched to the end; that confirmation becomes your
+          credit for one analysis</td>
+        <td>Art. 6(1)(b) GDPR</td>
+        <td>Until deletion</td>
+      </tr>
+      <tr>
         <td>Technical server logs (IP address, timestamp, error code)</td>
         <td>Operation, troubleshooting, abuse prevention</td>
         <td>Art. 6(1)(f) GDPR (legitimate interest)</td>
@@ -133,7 +159,8 @@
   </table>
 
   <p>
-    None of this feeds a profile. There is no comparison between users and no analysis beyond your individual use.
+    None of this becomes a profile of you. Usage statistics are only evaluated in aggregate — which variant
+    works better, how many analyses are started — never to judge you as a person.
   </p>
 
   <h3>Hiding is not deleting</h3>
@@ -193,15 +220,36 @@
     statistics.
   </p>
 
-  <h2>7. No tracking, no advertising</h2>
+  <h2>7. Advertising, consent and usage statistics</h2>
+  <h3>Ads in the free version</h3>
   <p>
-    Mr. Viral contains no analytics, advertising or attribution SDKs. There is no profiling, no automated
-    decision-making within the meaning of Art. 22 GDPR and no sharing with ad networks. We do not sell data. The
-    only third-party SDK included is the subscription service listed below.
+    Without a subscription you unlock an analysis by watching a short ad video. The ads are served by Google
+    AdMob. Before the first ad loads, the app shows Google's consent form (User Messaging Platform, following the
+    IAB's TCF standard) in the EU, the EEA and the United Kingdom. There you decide whether ads may be personalised
+    and whether information may be stored on your device. If you decline, you get non-personalised ads — the app
+    works exactly the same. On iOS the system's App Tracking Transparency prompt follows; if you declined in the
+    form, it is not shown at all. You can change your choice at any time under Profile → Ad settings. With
+    Mr. Viral Pro there are no ads.
+  </p>
+  <h3>Anonymous usage statistics</h3>
+  <p>
+    To see which features are used and where the app stalls or crashes, we use PostHog (PostHog Inc., run on
+    servers in Frankfurt, EU). Transmitted are your anonymous ID, device model, operating system, app version,
+    language, which screens you open and which actions you take — for example “analysis started”, the score band
+    of a result, or whether the paywall was opened — plus error and crash reports. Never transmitted are the
+    content of your videos, hooks or scripts, and no file names. The IP address is discarded on receipt. We use the
+    same data to compare design variants of the app (A/B tests); your anonymous ID is assigned to a variant for
+    that.
   </p>
   <p>
-    One technical exception: on first launch the app loads its typeface through Google Fonts. Google sees your IP
-    address in the process. After that the font sits on your device and is not fetched again.
+    The statistics run only if you agreed in the consent form to information being stored on your device (legal
+    basis Art. 6(1)(a) GDPR, § 25(1) TTDSG); outside the scope of the GDPR, where no form appears, they run without
+    one. You can switch them off at any time under Profile → Legal → “Anonymous usage statistics”. Retention:
+    12 months. There is no profiling, no automated decision-making within the meaning of Art. 22 GDPR and no
+    selling of data.
+  </p>
+  <p>
+    The app's typeface ships inside the app and is not fetched over the internet.
   </p>
 
   <h2>8. Recipients and processors</h2>
@@ -224,14 +272,21 @@
         <td>Performs the actual analysis. Receives your video or text, but no ID and no details about you.</td>
       </tr>
       <tr>
-        <td>Google Fonts</td>
-        <td>Delivers the app's typeface on first launch. Receives your IP address in doing so.</td>
-      </tr>
-      <tr>
         <td>RevenueCat</td>
         <td>Manages your subscription. Processes your anonymous ID, the purchase receipt from your app store,
           product and term, plus technical details about your device. RevenueCat never sees your videos or texts.
         </td>
+      </tr>
+      <tr>
+        <td>Google (AdMob, User Messaging Platform)</td>
+        <td>Serves the ad videos of the free version and provides the consent form. Processes the advertising ID,
+          IP address and delivery details; confirms to our server that an ad was watched to the end, under your
+          anonymous ID.</td>
+      </tr>
+      <tr>
+        <td>PostHog</td>
+        <td>Anonymous usage statistics and error reports (see section 7), servers in Frankfurt (EU). Receives your
+          anonymous ID and technical details, never videos or texts.</td>
       </tr>
       <tr>
         <td>Apple App Store / Google Play</td>
@@ -249,7 +304,8 @@
 
   <h3>Transfers to the United States</h3>
   <p>
-    Supabase, Google, RevenueCat, Apple and GitHub are US companies. Even though our database and storage are
+    Supabase, Google, RevenueCat, PostHog, Apple and GitHub are US companies; PostHog processes our data on
+    servers in Frankfurt. Even though our database and storage are
     technically located in Ireland, access from the United States cannot be ruled out. For the Gemini analysis,
     processing takes place on Google's global infrastructure in any case. The legal basis for this is the
     European Commission's Standard Contractual Clauses under Art. 46(2)(c) GDPR, unless the provider in question
