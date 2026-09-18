@@ -20,7 +20,7 @@
   </p>
 
   <h1>Privacy Policy</h1>
-  <p class="meta">Mr. Viral · Last updated: 13 September 2026</p>
+  <p class="meta">Mr. Viral · Last updated: 18 September 2026</p>
 
   <div class="note">
     <strong>In short</strong>
@@ -150,6 +150,16 @@
         <td>Until deletion</td>
       </tr>
       <tr>
+        <td>Welcome credit and bot check (anonymous ID; for the check: IP address and technical characteristics
+          of your device and the embedded browser component)</td>
+        <td>On first launch you get one analysis for free. So that this cannot be claimed automatically in bulk,
+          Cloudflare Turnstile checks once, in the background, that a real device is asking. Our server stores
+          only the credit under your anonymous ID</td>
+        <td>Art. 6(1)(f) GDPR (legitimate interest in preventing abuse and protecting our costs); the credit
+          itself Art. 6(1)(b) GDPR</td>
+        <td>Credit until deletion; the check data at Cloudflare under its privacy policy, we store none of it</td>
+      </tr>
+      <tr>
         <td>Technical server logs (IP address, timestamp, error code)</td>
         <td>Operation, troubleshooting, abuse prevention</td>
         <td>Art. 6(1)(f) GDPR (legitimate interest)</td>
@@ -248,6 +258,17 @@
     12 months. There is no profiling, no automated decision-making within the meaning of Art. 22 GDPR and no
     selling of data.
   </p>
+  <h3>Welcome credit and bot check</h3>
+  <p>
+    On first launch you get one video analysis for free, with no ad and no subscription. Because anonymous
+    accounts can be created automatically, the app checks once with Cloudflare Turnstile (Cloudflare, Inc.)
+    before granting the credit that the request comes from a real device. The check runs invisibly inside an
+    embedded browser component; Cloudflare receives your IP address and technical characteristics of that
+    component and of your device, but neither your anonymous ID nor any content. No cookie is set to recognise
+    you later and no profile is built. If the check fails or cannot be reached, only the credit is skipped — the
+    app works as usual. The legal basis is our legitimate interest in preventing automated abuse
+    (Art. 6(1)(f) GDPR).
+  </p>
   <p>
     The app's typeface ships inside the app and is not fetched over the internet.
   </p>
@@ -289,6 +310,11 @@
           anonymous ID and technical details, never videos or texts.</td>
       </tr>
       <tr>
+        <td>Cloudflare (Turnstile)</td>
+        <td>One-time bot check before the welcome credit (see section 7). Processes the IP address and technical
+          characteristics of the device; receives no ID, no videos and no texts.</td>
+      </tr>
+      <tr>
         <td>Apple App Store / Google Play</td>
         <td>Distribution of the app and payment processing. These platforms collect their own data under their
           own privacy policies. We receive no payment details from them, only confirmation that a subscription
@@ -304,7 +330,7 @@
 
   <h3>Transfers to the United States</h3>
   <p>
-    Supabase, Google, RevenueCat, PostHog, Apple and GitHub are US companies; PostHog processes our data on
+    Supabase, Google, RevenueCat, PostHog, Cloudflare, Apple and GitHub are US companies; PostHog processes our data on
     servers in Frankfurt. Even though our database and storage are
     technically located in Ireland, access from the United States cannot be ruled out. For the Gemini analysis,
     processing takes place on Google's global infrastructure in any case. The legal basis for this is the
